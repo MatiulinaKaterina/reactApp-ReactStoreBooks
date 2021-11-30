@@ -1,0 +1,157 @@
+@import url('//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;700&family=Raleway:wght@300&display=swap');
+* {
+   margin: 0;
+   padding: 0;
+}
+
+/* RegisrationForm */
+
+.page {
+   display: flex;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image: url(./img/index-4.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.registration-form {
+   width: 300px;
+   height: 300px;
+   background-color: rgba(250, 245, 245, 0.8);
+   margin: auto;
+}
+
+.registration-form__container {
+   width: 300px;
+   height: 100px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.registtraion-input {
+   width: 250px;
+   height: 35px;
+   border: none;
+   border-bottom: solid rgb(111, 117, 113) 2px;
+   background-color: rgba(250, 245, 245, 0.5);
+   margin: 0px 0px 7px 0px;
+   outline: none;
+}
+
+.registration-form__checkbox_margin {
+   margin: 0px 0px 0px 25px;
+}
+
+.button_view {
+   width: 180px;
+   height: 30px;
+   text-decoration: none;
+   display: inline-block;
+   margin-top: 25px;
+   position: relative;
+   color: white;
+   border: 1px solid rgba(69, 67, 216, 0.4);
+   border-radius: 10px;
+   background: rgb(210, 223, 217);
+   font-weight: 300;
+   font-size: 16px;
+   text-transform: uppercase;
+}
+
+.button_view:before, .border-button:after {
+   content: "";
+   position: absolute;
+   width: 0;
+   height: 0;
+   opacity: 0;
+   box-sizing: border-box;
+}
+
+.button_view:before {
+   bottom: 0;
+   left: 0;
+   border-left: 1px solid white;
+   border-top: 1px solid white;
+   border-radius: 10px;
+   transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+}
+
+.button_view:after {
+   top: 0;
+   right: 0;
+   border-right: 1px solid white;
+   border-bottom: 1px solid white;
+   transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+}
+
+.button_view:hover:before, .border-button:hover:after {
+   height: 100%;
+   width: 100%;
+   opacity: 1;
+}
+
+.button_view:hover:before {
+   transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+}
+
+.button_view:hover:after {
+   transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+}
+
+.button_view:hover {
+   background: rgb(228, 233, 231);
+}
+
+
+/* Card */
+
+.card {
+   border: 1px solid #f3f3f3;
+   padding: 30px;
+   width: 220px;
+   border-radius: 40px;
+   margin: 20px;
+   transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.card:hover {
+   box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.06);
+   transform: translateY(-5px);
+}
+.card-autor{
+   font-weight: 400;
+   font-size: 14px;
+   word-break: normal;
+   white-space: pre-wrap;
+}
+.card-name{
+   hyphens: manual;
+   max-height: 2.4em;
+   overflow: hidden;
+   font-weight: bold;
+}
+.card-span{
+   font-size: 13px;
+    opacity: 0.5;
+    text-transform: uppercase;
+}
+.card-b{
+   font-size: 14px;
+}
+.button-plus{
+   background: #ffffff;
+  border: 1px solid #f2f2f2;
+  box-sizing: border-box;
+  border-radius: 8px;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+}
+
